@@ -5,20 +5,21 @@
     <title>index</title>
     <style>
         #AandB_title {
-            margin-left: 20px;
+            margin-left: 80px;
             float: left;
-            margin-top: auto;
+            margin-top: 37px;
             margin-bottom: auto;
             display: block;
         }
         .menu_ul {
             list-style-type: none;
-            margin: 40px;
+            margin-top: 40px;
             padding: 0;
             overflow: hidden;
             background-color: white;
+            font-family: "나눔바른고딕"; 
+            font-size: 18px;
         }
-        
         .menu_li {
             float: left;
             border-right: 1px #27B761 solid;
@@ -29,47 +30,55 @@
             float: right;
             background-color: #27B761;
             transition-duration: 0.4s;
-        }
-        
+            border-left: 1px white solid;
+        }  
         .menu_li:last-child {
             border-right: none;
         }
-        
+        .menu_li a:hover:not(.active){
+            color: #27B761;
+            transition-duration: 0.5s;
+        }
         .log_li a:hover:not(.active) {
             background-color: #229350;
-            transition-duration: 0.4s;
+            transition-duration: 0.5s;
         }
         li a {
             display: block;
             color: #333;
             text-align: center;
-            padding: 20px 25px;
+            padding: 30px 40px;
             text-decoration: none;
         }
         header {
+            background-color: white;
             height: 150px;
             padding: 10px 0;
         }
         .log {
             color: white;
         }
+        #div_log {
+            margin-right: 45px;
+        }
     </style>
 </head>
     <body>
     <div id="home_main">
         <header class = "menuBar">
-            <div>
-             <div id="AandB_title"><a href="#"><img src="img/AnadB_title.png" width="130px;"></a></div>
+             <div id="AandB_title"><a href="#"><img src="img/AnadB_title.png" width="140px;"></a></div>
               <div id="menu_word">
                   <ul class="menu_ul">
                      <li class="menu_li"><a href="#" style="margin-left: 50px;">기능</a></li>
                      <li class="menu_li"><a href="#">등급</a></li>
                      <li class="menu_li"><a href="#">도움말</a></li>
-                      <li class="log_li"><a class ="log"href="#">회원가입</a></li>
-                     <li class="log_li"><a class="log"href="#">로그인</a></li>
+                      <div id="div_log">
+                         <li class="log_li"><a class="log"href="#" >로그인</a></li>
+                         <li class="log_li"><a class ="log"href="#">회원가입</a></li>
+                      </div>
+                     
                   </ul>
               </div>
-            </div>
         </header>
         <section>
             <div class="content">
