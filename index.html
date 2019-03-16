@@ -6,8 +6,13 @@
     <style>
         #AandB_title {
             font-family: "서울한강체";
-            margin-left: 60px;
+            margin-left: 80px;
+            margin-top: 35px;
             float: left;  
+        }
+        .menu_ul{
+            float: left;
+            margin-left: 40px;
         }
         .menu_li {
             list-style: none;
@@ -15,11 +20,34 @@
             position: relative;
             float: left; 
             padding-right: 50px;
-            margin-top: 13px;
+            margin-left: 50px; 
+        }
+        .menu_log{
+            list-style: none;
+            display: block;
+            float: right;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        .log_li {
+            list-style: none;
+            display: block;
+            position: relative;
+            float: left; 
+            padding-right: 50px;
             margin-left: 50px;
+        }
+        .menu_li, .log_li{
+            font-family: "나눔바른고딕";
+            font-size: 20px;    
+            margin-top: 50px;
         }
         li a {
             text-decoration: none;
+            color: #27B761;
+        }
+        li a:hover {
+            color: aqua;
         }
     </style>
 </head>
@@ -27,14 +55,23 @@
     <div id="home_main">
         <header class = "menuBar">
             <div class = "menuBar" style="display: block;">
-            <h1 id="AandB_title">甲乙관계</h1>
-            <ul class="menu_li">
-                <li class="menu_li"><a href="#">기능</a></li>
-                <li class="menu_li"><a href="#">등급</a></li>
-                <li class="menu_li"><a href="#">도움말</a></li>
-            </ul>
+             <div id="AandB_title"><a href="#"><img src="img/AandB_title.png" width="140px;"></a></div>
+              <div id="menu_word">
+              <ul class="menu_ul">
+                 <li class="menu_li"><a href="#">기능</a></li>
+                 <li class="menu_li"><a href="#">등급</a></li>
+                 <li class="menu_li"><a href="#">도움말</a></li>
+              </ul>
+              <ul class="menu_log">
+                 <li class="log_li"><a href="#">회원가입</a></li>
+                 <li class="log_li"><a href="#">로그인</a></li>
+              </ul>
+              </div>
             </div>
         </header>
+        <section>
+            <img src="img/noMoney.jpg" width="85%" style="align-items: center;">
+        </section>
     </div>
     </body>
 </html>
