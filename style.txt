@@ -1,0 +1,43 @@
+header {
+            position: fixed;
+        }
+        #AandB_title {
+            font-family: "서울한강체";
+            margin-left: 80px;
+            margin-top: 35px;
+            float: left;  
+        }
+        .menu_ul{
+            margin: 0;
+            background-color: black;
+            overflow: hidden;
+            
+        }
+        .menu_li, .log_li{
+            list-style: none;
+            display: block;
+            position: relative;
+            float: left; 
+            padding-right: 50px;
+            margin-left: 50px;
+            font-family: "나눔바른고딕";
+            font-size: 20px; 
+            
+        }
+        .menu_li a {
+            color: #27B761;
+        }
+        .log{
+            background-color: #27B761;
+            color: white;
+        }
+        li a {
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            
+            padding: 15px 20px;
+        }
+        li a:hover {
+            color: aqua;
+        }
