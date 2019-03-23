@@ -7,13 +7,13 @@
         #AandB_title {
             margin-left: 80px;
             float: left;
-            margin-top: 37px;
+            margin-top: 20px;
             margin-bottom: auto;
             display: block;
         }
         .menu_ul {
             list-style-type: none;
-            margin-top: 40px;
+            margin-top: 27px;
             padding: 0;
             overflow: hidden;
             background-color: white;
@@ -27,7 +27,7 @@
             padding-right: 20px;
         }
         .log_li {
-            float: right;
+            float: left;
             background-color: #27B761;
             transition-duration: 0.4s;
             border-left: 1px white solid;
@@ -60,7 +60,43 @@
         }
         #div_log {
             margin-right: 45px;
+            float: right;
         }
+/*
+        .content{
+            float: right;
+            position: relative;
+            left: -65%;
+        }
+        .content img {
+            max-width: 400px;
+            height: auto;
+            clear: both;
+            position: relative;
+            left: 35%;
+            float: left;
+        }
+        .content_sub {
+            float: right;
+        }
+*/      
+        #content{
+            position: relative;
+            left: 15%;
+        }
+        #content img {
+            position: relative;
+            width: auto;
+            height: 400px;
+            float: left;
+        }
+        #span_sub {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 400px;
+            right: 35%;
+        }
+        
     </style>
 </head>
     <body>
@@ -76,15 +112,19 @@
                          <li class="log_li"><a class="log"href="#" >로그인</a></li>
                          <li class="log_li"><a class ="log"href="#">회원가입</a></li>
                       </div>
-                     
                   </ul>
               </div>
         </header>
-        <section>
-            <div class="content">
-                
+        <div>
+            <div id="content">
+                <img src="img/pay.png">
+                <span>
+                    <span id="span_sub">
+                     <h1>이번에도 까먹으셨나요?</h1>
+                    </span> 
+                </span>                
             </div>
-        </section>
+        </div>
     </div>
     </body>
 </html>
